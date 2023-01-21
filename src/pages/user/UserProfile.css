@@ -1,0 +1,232 @@
+.user-profile {
+    display: flex;
+    height: 100vh;
+    margin: 50px 100px;
+}
+
+.user-profile-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    animation: TopBottom 1s ease 0s 1 normal forwards;
+    /* animation: InOut 1s ease 0s 1 normal forwards; */
+}
+
+.profile-user-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.user-name {
+    color: #6A24FF;
+}
+
+.profile-image {
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.profile-image > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.user-profile-texts{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.text-one {
+    flex: 1;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #ab9c9c;
+    margin: 3px 0px;
+}
+.text-two {
+    flex: 2;
+    font-size: 14px;
+}
+.user-profile-right {
+    flex: 2;
+    margin-left: 10px;
+}
+
+.profile-right-container-bio {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    animation: TopBottom 1s ease 0s 1 normal forwards;
+}
+
+.profile-right-container {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+.profile-right-container, .profile-user-personality > h3 {
+    font-size: 15px;
+}
+
+.profile-user-roles > h3 {
+    font-size: 15px;
+}
+
+.dot {
+    color: #6A24FF;
+    font-size: large;
+    margin-right: 8px;
+}
+
+.quote {
+    color: #6A24FF;
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+.profile-user-quote{
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.profile-user-personality, .profile-user-roles {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.personality-tags {
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.personality-tag {
+    display: flex;
+    background-color: #E1E1E1;
+    border-radius: 15px;
+    padding: 2px 15px;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+}
+
+.profile-update-button {
+    border: none;
+    padding: 6px 35px;
+    color: white;
+    background-color: #6A24FF;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.profile-update-button > a {
+    text-decoration: none;
+    color: white;
+}
+
+.profile-bottom-container {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+    
+}
+.profile-update-button:hover {
+    background-color: white;
+    border:1px solid #6A24FF;
+    color: #3A3D5B;
+    border: none;
+    outline: 1px solid #6A24FF;
+}
+
+.profile-update-button > a:hover {
+    color: #3A3D5B;
+}
+
+.view-breakfasts-button {
+    border: none;
+    padding: 6px 35px;
+    color: #6A24FF;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 5px;
+    outline: 1px solid #6A24FF;
+}
+
+.profile-manage-users-button {
+    border: none;
+    padding: 6px 35px;
+    color: #FFF;
+    background-color: #3A3D5B;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+/* Tablets */
+@media only screen and (max-width: 11px) {
+    .user-profile {
+        margin: 50px 5px;
+    }
+}
+
+@keyframes InOut {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+        margin-top: 10px;
+	}
+}
+
+@keyframes TopBottom {
+	0% {
+		opacity: 0;
+		transform: rotateX(-100deg);
+		transform-origin: top;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateX(0deg);
+		transform-origin: top;
+	}
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
